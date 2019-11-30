@@ -21,4 +21,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class FindUserForm extends ActionSupport {
 
+	/** Serial */
+	private static final long serialVersionUID = 490611248199262291L;
+
 }

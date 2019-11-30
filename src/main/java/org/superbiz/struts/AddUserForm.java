@@ -21,4 +21,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 public class AddUserForm extends ActionSupport {
 
+	/** Serial */
+	private static final long serialVersionUID = -197079540532311192L;
+
 }
