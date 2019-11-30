@@ -1,0 +1,17 @@
+---
+applications:
+- name: struts-reloaded
+  memory: 736M
+  disk_quota: 256M
+  routes:
+  - route: struts-reloaded.apps.eu01.cf.canopy-cloud.com
+  path: target/struts.war
+  buildpacks: 
+  - java_buildpack
+  stack: cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
+    
+  services:
+    - eureka-service
+    - struts-mysql
